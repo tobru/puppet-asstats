@@ -1,0 +1,5 @@
+# THIS FILE IS MANAGED BY PUPPET
+# Router IP	 SNMP ifindex	tag		description		color
+<% knownlinks.each do |link| -%>
+<%= link['ip'] %>	<%= link['ifindex'] %>	<%= link['tag'] %>	<%= link['description'] %>	<%= link['color'] %>
+<% end -%>
